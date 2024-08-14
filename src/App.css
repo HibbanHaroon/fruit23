@@ -1,0 +1,14 @@
+.App {
+  background-image: url("/public/assets/images/backgroundImage.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: url("/public/assets/images/cursor.png"), auto;
+}
