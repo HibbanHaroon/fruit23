@@ -13,11 +13,17 @@ function SecondContent() {
     const importAll = (r) => r.keys().map(r);
     setImagePaths(
       importAll(
-        require.context("/public/assets/pictures", false, /\.(png|jpe?g|svg)$/)
+        require.context(
+          "/public/assets/pictures",
+          false,
+          /\.(png|jpe?g|svg|webp)$/
+        )
       )
     );
     setAudioPaths(
-      importAll(require.context("/public/assets/audios", false, /\.(mp3|wav)$/))
+      importAll(
+        require.context("/public/assets/audios", false, /\.(mp3|wav|ogg)$/)
+      )
     );
 
     const handleKeyPress = (event) => {
