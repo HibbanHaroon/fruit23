@@ -1,0 +1,62 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.content h1 {
+  /* font-family: "CopyDuck", sans-serif; */
+  font-size: 6rem;
+  margin: 0;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.buttonDiv button {
+  /* font-family: "CopyDuck", sans-serif; */
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  transition: transform 0.3s ease, scale 0.3s ease;
+  cursor: url("/public/assets/images/cursor.png"), pointer;
+}
+
+.buttonDiv button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.newContent h1 {
+  font-size: 4rem;
+  color: #333;
+  text-align: center;
+}
